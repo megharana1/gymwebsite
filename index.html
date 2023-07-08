@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GYM</title>
+    <link rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+            background: url('gym2.jpg');
+        }
+        
+        .left {
+            /* border: 3px solid yellow; */
+            display: inline-block;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            width: 200px;
+        }
+        
+        .mid {
+            /* border: 3px solid green; */
+            display: block;
+            width: 40%;
+            margin: 3px auto;
+        }
+        
+        ul li {
+            display: inline-block;
+            padding: 5px;
+            margin: 10px;
+        }
+        
+        ul li a {
+            text-decoration: none;
+            color: white;
+            font-family: 'Crimson Text', serif;
+            font-size: 25px;
+        }
+        
+        ul li a:hover {
+            color: grey;
+        }
+        
+        .right {
+            /* border: 3px solid lightpink; */
+            display: inline-block;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+        
+        .btn {
+            background-color: rgb(10, 10, 122);
+            color: rgb(230, 222, 222);
+            border: 0;
+            border-radius: 5px;
+            width: 83px;
+            margin: 11px;
+            padding: 8px;
+            cursor: pointer;
+        }
+        
+        .btn:hover {
+            background-color: darkslategray;
+        }
+        
+        img {
+            width: 82px;
+            height: 76px;
+            margin: 0px 30px;
+        }
+        
+        .left div {
+            color: white;
+            margin: 5px auto;
+            width: 150px;
+            left: 15px;
+            font-size: larger;
+        }
+        
+        .container {
+            color: white;
+            border: 2px solid gray;
+            border-radius: 50px;
+            display: inline-block;
+            margin: 60px 80px;
+            padding: 20px;
+            width: 33%;
+        }
+        
+        .form {
+            margin: 20px 120px;
+        }
+        
+        .form input {
+            text-align: center;
+            border-radius: 10px;
+            padding: 20px;
+        }
+        
+        .container h1 {
+            margin: 25px 50px;
+        }
+        
+        .btn2 {
+            text-align: center;
+            border-radius: 5px;
+            padding: 10px;
+            margin: 20px 185px;
+        }
+        
+        .btn2:hover {
+            background-color: brown;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="left" id="a1">
+            <!-- This is for logo(left) -->
+            <img src="logo.jpg" alt="Logo">
+            <div>Fitness Gym</div>
+        </div>
+
+        <div class="mid" id="a2">
+            <!-- This is for navbar(mid) -->
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact us</a></li>
+
+            </ul>
+
+        </div>
+        <div class="right" id="a3">
+            <!-- This is for buttons(right) -->
+            <button class="btn">Call Now</button>
+            <button class="btn">Email Us</button>
+    </header>
+    <div class="container">
+        <h1>Online Registration Form</h1>
+        <form action="noaction.php">
+            <div class="form">
+                <input type="text" placeholder="Enter your name">
+            </div>
+            <div class="form">
+                <input type="text" placeholder="Enter Your Age">
+            </div>
+            <div class="form">
+                <input type="text" placeholder="Gender">
+            </div>
+            <div class="form">
+                <input type="text" placeholder="Phone Number">
+            </div>
+            <div class="form">
+                <input type="text" placeholder="Enter your Email">
+            </div>
+            <button class="btn2">Submit</button>
+        </form>
+
+    </div>
+</body>
+
+</html>
